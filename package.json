@@ -1,0 +1,32 @@
+{
+  "name": "mc-geocoding-server",
+  "version": "1.0.0",
+  "description": "Reverse geocoding services",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liltimtim/mc-geocoding-server.git"
+  },
+  "keywords": [
+    "geocoding"
+  ],
+  "author": "Tim Dillman (tim@launchpeer.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liltimtim/mc-geocoding-server/issues"
+  },
+  "homepage": "https://github.com/liltimtim/mc-geocoding-server#readme",
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "chai-http": "^3.0.0"
+  },
+  "dependencies": {
+    "node-geocoder": "^3.18.0"
+  }
+}
