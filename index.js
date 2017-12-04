@@ -26,6 +26,23 @@ class Geocode {
     });
   }
   /**
+   * Attempts to resolve coordinates for the given address string. 
+   * @param {String} address A partial or full address to attempt a resolution from
+   */
+  coordinatesOfAddress(address) {
+    return new Promise((resolve, reject) => {
+      this.geocoder.geocode(address)
+      .then(result => {
+        if(result.length == 0) { return reject('No results found.'); }
+        return resolve(result[0]);
+      })
+      .catch(err => {
+        return reject(err);
+      });
+    });
+  }
+
+  /**
    * 
    * @param {Number} latitude 
    * @param {Number} longitude 
